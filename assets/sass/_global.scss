@@ -6,7 +6,6 @@ body {
     color: $black;
     font-family: $sans-serif;
     line-height: 1.2;
-    // background-color: $primary;
 }
 
 input {
@@ -290,7 +289,6 @@ select {
         #primary-menu {
             background-color: $secondary;
             padding: 2vw;
-            // transition: .2s all ease-in;
 
             ul {
                 padding-left: 2vw;
@@ -334,7 +332,6 @@ select {
                     .site-logo {
                         max-width: 155px;
                         max-height: 70px;
-                        // margin-top: 5px;
                     }
                 }
             }

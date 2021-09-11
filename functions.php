@@ -31,13 +31,6 @@ add_action( 'wp_enqueue_scripts', 'bibliotheque_scripts' );
 
 
 /**
-* Customize Options
-*/
-
-// require get_template_directory() . '/inc/customizer/options.php';
-
-
-/**
 * Menus
 */
 
