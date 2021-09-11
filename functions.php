@@ -74,22 +74,6 @@ function bibliotheque_widgets_init() {
         'before_title'  => '<h3 class="widget-title">',
         'after_title'   => '</h3>',
     ) );
-    register_sidebar( array(
-        'name'          => __( 'Left footer widgets', 'bibliotheque' ),
-        'id'            => 'footer-left',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>',
-    ) );
-    register_sidebar( array(
-        'name'          => __( 'Right footer widgets', 'bibliotheque' ),
-        'id'            => 'footer-right',
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '<h3 class="widget-title">',
-        'after_title'   => '</h3>',
-    ) );
 }
 add_action('widgets_init', 'bibliotheque_widgets_init');
 
