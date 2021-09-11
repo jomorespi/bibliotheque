@@ -36,8 +36,7 @@ add_action( 'wp_enqueue_scripts', 'bibliotheque_scripts' );
 
 function bibliotheque_menus() {
     register_nav_menus( array(
-        'primary-menu' => __('Primary Menu', 'bibliotheque'),
-        'social-menu' => __('Social Media Menu', 'bibliotheque')
+        'primary-menu' => __('Primary Menu', 'bibliotheque')
         ) );
     }
     
