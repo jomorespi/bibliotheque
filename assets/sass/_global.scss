@@ -283,12 +283,13 @@ select {
         width: 100%;
         position: absolute;
         top: 23vw;
+        left: 0;
         z-index: 10;
         border-radius: 1px;
 
-        #primary-menu {
+        &>nav {
             background-color: $secondary;
-            padding: 2vw;
+            padding: 20px 15px;
 
             ul {
                 padding-left: 2vw;
@@ -299,6 +300,24 @@ select {
             display: block;
             -webkit-animation: appearMenu 0.6s ease-out;
             animation: appearMenu 0.6s ease-out;
+        }
+
+        .searchform {
+            padding: 15px 0 20px;
+            background-color: $primary;
+
+            &>div {
+                display: flex;
+
+                input {
+                    margin-bottom: 0;
+
+                    &#searchsubmit {
+                        margin-left: 15px;
+                    }
+                }
+
+            }
         }
     }
 
@@ -361,8 +380,9 @@ select {
         .menu-wrapper {
             position: absolute;
             top: 0;
+            left: 15px;
 
-            #primary-menu {
+            &>nav {
                 padding: 25px 240px 25px 25px;
 
                 &>ul {
@@ -382,7 +402,8 @@ select {
                             }
                         }
 
-                        &.page_item_has_children {
+                        &.page_item_has_children,
+                        &.menu-item-has-children {
                             &>a {
                                 &::after {
                                     content: "\2192";
@@ -391,7 +412,8 @@ select {
                             }
 
                             &:hover {
-                                &>.children {
+                                &>.children,
+                                &>.sub-menu {
                                     display: inline-block;
                                     -webkit-animation: appearSubMenu 0.4s ease-out;
                                     animation: appearSubMenu 0.4s ease-out;
@@ -399,7 +421,8 @@ select {
                             }
                         }
 
-                        &>.children {
+                        &>.children,
+                        &>.sub-menu {
                             display: none;
                             text-transform: initial;
                             position: absolute;
@@ -436,23 +459,6 @@ select {
                 }
             }
 
-            .searchform {
-                padding: 15px 0 2px;
-                background-color: $primary;
-
-                &>div {
-                    display: flex;
-
-                    input {
-                        margin-bottom: 0;
-
-                        &#searchsubmit {
-                            margin-left: 15px;
-                        }
-                    }
-
-                }
-            }
         }
     }
 }
@@ -466,6 +472,12 @@ select {
 
         a {
             @include contentLink;
+        }
+    }
+
+    .posts-grid {
+        article {
+            padding: 15px;
         }
     }
 
@@ -772,6 +784,7 @@ select {
                 -ms-word-wrap: break-word;
                 word-wrap: break-word;
                 max-width: 240px;
+                padding: 0;
 
                 &[data-post="first"] {
                     grid-row: 1 / 3;
