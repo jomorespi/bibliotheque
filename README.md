@@ -5,5 +5,3 @@
 _Lewis Carrol - ALICE'S ADVENTURES IN WONDERLAND_
 
 [Bibliothèque Demo](https://jordimoreno.cat/bibliotheque/ "Go to Bibliothèque WordPress Theme Demo")
-
-<img src="https://raw.githubusercontent.com/jomorespi/bibliotheque/master/screenshot.png" alt="screenshot of the theme" />
